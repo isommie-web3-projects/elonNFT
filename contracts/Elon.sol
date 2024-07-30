@@ -18,7 +18,8 @@ contract ElonNFT is ERC721URIStorage {
         //uint256 newItemId = _tokenIds.current(); -- replaced with below
         uint newItemId = _tokenIds;
         _mint(msg.sender, newItemId);
-        _setTokenURI(newItemId, "hello world");
+         _setTokenURI(newItemId, "https://yellow-big-chimpanzee-951.mypinata.cloud/ipfs/QmeVLJ17HfpjvZBjFy3a91VTBxNUpMMvjTkcJZg14rcYGS");
+        // _setTokenURI(newItemId, "hello world");
         console.log(
             "The NFT ID %s has been minted to %s",
             newItemId,
